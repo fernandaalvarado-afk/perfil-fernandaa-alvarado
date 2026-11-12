@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi perfil académico</title>
+	<style>
+		:root { --ink: #1d2942; --muted: #64718a; --blue: #4263eb; }
+		* { box-sizing: border-box; }
+		body {
+			min-height: 100vh; margin: 0; padding: 36px 18px; display: grid; place-items: center;
+			color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+			background: radial-gradient(circle at 12% 10%, #dce7ff, transparent 35%), #f4f6fc;
+		}
+		.card { width: min(100%, 850px); overflow: hidden; background: white; border-radius: 24px; box-shadow: 0 20px 60px #293c721c; }
+		header {
+			padding: 38px 44px; display: flex; align-items: center; gap: 26px; color: white;
+			background: linear-gradient(120deg, #3659d9, #7657d5);
+		}
+		
+		
+		.subtitle { margin: 10px 0 0; color: #ffffffd9; }
+		main { padding: 32px 44px 38px; }
+		.intro { margin: 0 0 22px; padding: 16px 18px; border-left: 4px solid #7184ed; border-radius: 0 10px 10px 0; background: #f5f7ff; color: #4e5a72; line-height: 1.7; }
+		.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+		article { padding: 18px; border: 1px solid #e8ecf5; border-radius: 14px; }
+		h2 { margin: 0 0 9px; font-size: 1rem; }
+		article p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.6; }
+		.contact { margin-top: 18px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 14px; border-radius: 14px; color: white; background: #35478e; }
+		.contact h2 { margin: 0 0 4px; }
+		.contact p { margin: 0; color: #ffffffc9; font-size: .9rem; }
+		.contact a { padding: 9px 13px; border: 1px solid #ffffff80; border-radius: 9px; color: white; text-decoration: none; white-space: nowrap; }
+		.contact a:hover, .contact a:focus-visible { background: #ffffff20; }
+		footer { padding-top: 20px; color: #8993a8; text-align: center; font-size: .82rem; }
+		@media (max-width: 580px) {
+			body { padding: 14px 10px; }
+			header { padding: 28px 20px; flex-direction: column; text-align: center; gap: 16px; }
+			.photo { width: 112px; height: 112px; flex-basis: 112px; }
+			main { padding: 22px 18px 26px; }
+			.grid { grid-template-columns: 1fr; gap: 10px; }
+			.contact { align-items: flex-start; flex-direction: column; }
+		}
+        .foto {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #eee8f2;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    display: block;
+}
+.presentacion {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<header>
+			<div></div><img src="fernandaa.jpeg"
+       alt="Foto de perfil"
+       class="foto">
+				
+			</div>
+			<div>
+				<p class="label">Tarjeta de presentación académica</p>
+				<h1>Fernanda Alvarado</h1>
+				<p class="subtitle">Estudiante · Con aspiraciones en Contaduría Pública</p>
+			</div>
+		</header>
+		<main>
+			<p class="intro">¡Hola! Soy estudiante y me entusiasma aprender, desarrollar nuevas habilidades y poner mis conocimientos al servicio de proyectos con impacto. Este espacio reúne mis metas, intereses y áreas de exploración académica.</p>
+			<section class="grid" aria-label="Perfil académico">
+				<article><h2>🎓 Aspiraciones educativas</h2><p>Mi aspiración es estudiar Contaduría Pública, profundizar mis conocimientos en contabilidad, finanzas y administración, y prepararme para ejercer mi profesión con responsabilidad.</p></article>
+				<article><h2>💻 Intereses tecnológicos</h2><p>Me interesa aprender a utilizar herramientas tecnológicas que faciliten el trabajo contable, como Excel, programas de contabilidad y sistemas de facturación electrónica. También me llama la atención el análisis de datos.</p></article>
+				<article><h2>📚 Áreas de estudio</h2><p>Contabilidad y finanzas, Asministraciòn de empresas, Economìa y matemàticas, Emprendimiento y Gestiòn empresarial.</p></article>
+				<article><h2>🎨 Otros intereses</h2><p>Me gusta aprender cosas nuevas, desarrollar ideas de negocio, conocer sobre educación financiera, trabajar en equipo y adquirir conocimientos que me ayuden a crecer personal y académicamente.</p></article>
+			</section>
+		
+			<footer>Una mente curiosa siempre tiene algo nuevo por aprender ✨</footer>
+		</main>
+	</div>
+</body>
+</html>
